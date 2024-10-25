@@ -1,0 +1,29 @@
+<p>taxcomparison works!</p>
+
+<!-- restUserData.getYear(); -->
+
+<div class="container">
+    <h3 class="subtitle">Tax Comparison</h3>
+    <h3>Select Year</h3>
+    
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <label for="firstyear">First Year</label>
+            <select id="firstyear" [(ngModel)]="FirstYear">
+                <option value="">Select First Year</option>
+                <option *ngFor="let year of restUserData.totalYears" [value]="year">{{ year }}</option>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <label for="secondyear">Second Year</label>
+            <select id="secondyear" [(ngModel)]="SecondYear">
+                <option value="">Select Second Year</option>
+                <option *ngFor="let year of restUserData.totalYears" [value]="year">{{ year }}</option>
+            </select>
+        </div>
+    </div>
+
+    <button class="search-button" (click)="restUserData.compare(FirstYear,SecondYear)">Comparison</button>
+</div>
+<!-- <button (click)="restUserData.getYear()">Year</button> -->

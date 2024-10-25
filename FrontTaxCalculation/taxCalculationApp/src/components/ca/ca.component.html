@@ -1,0 +1,38 @@
+<!-- <button (click)="restUserData.getAllUsers()">get Users</button> -->
+
+ 
+
+    <table border="1">
+        <tr>
+            <th>User id</th>
+            <th>User Name</th>
+            <th>View Details</th>
+            
+    
+        </tr>
+        <tr *ngFor="let p of restUserData.allusers ">
+            <td> {{p.userId}} </td>
+            <td> {{p.userName}} </td>
+            <button  (click)="restUserData.viewDetails(p)">View Details</button>
+
+        </tr>
+    </table> 
+
+    <table border="1" *ngIf="restUserData.userDetails">
+    <tr>
+        <th>User id</th>
+        <th>User Name</th>
+        <th>Year</th>
+        <th>Hiii</th>
+        
+
+    </tr>
+
+    <tr *ngFor="let p of restUserData.userDetails ">
+        <td> {{p.userId}} </td>
+        <td> {{restUserData.DetailsUserName}} </td>
+        <td> {{p.assessmentYear}} </td>
+        <!-- <button  (click)="restUserData.viewDetails(p.userId)">View Details</button> -->
+
+    </tr>
+</table>
