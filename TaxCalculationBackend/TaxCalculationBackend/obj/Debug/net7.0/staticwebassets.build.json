@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0FMUL88PNU0hhFrxJrHViv6erC5L97Dnoci2G3H5jqo=",
+  "Source": "TaxCalculationBackend",
+  "BasePath": "_content/TaxCalculationBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
